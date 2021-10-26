@@ -129,7 +129,7 @@ class App:
         if change_price:
             f = open('products.txt', 'w', encoding='utf-8')
             for product in products:
-                f.write(product.name + ' ' + product.price + '\n')
+                f.write('\n' + product.name + ' ' + product.price)
             msg = "Цена на данный продукт изменена"
         else:
             f = open('products.txt', 'a', encoding='utf-8')
